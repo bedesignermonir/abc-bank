@@ -11,15 +11,45 @@
 
 <body>
     <h1 class="text-5xl text-center font-bold mt-20">Hurrey!!!!! <span class="">Money</span> is there</h1>
-    <section id="login-area" class="bg-fuchsia-600 p-10 mt-20 w-9/12 mx-auto rounded">
-        <input id="email-input" class="px-10 py-5 rounded w-8/12 ml-auto" type="email"
-            placeholder="Enter your email Address: abc@computer.com" required>
-        <br><br>
-        <input id="password-input" class="px-10 py-5 rounded w-8/12 mx-auto" type="password"
-            placeholder="Enter your Password: 123456" required>
-        <br> <br>
-        <button id="sign-in" class="hover:bg-sky-400 bg-white py-3 px-10 rounded-lg">Sign In</button>
+    <section class="p-20 flex">
+        <div class="bg-red-400 w-4/12 m-5 text-center text-3xl font-bold py-20 rounded-lg">
+            <h3>Savings</h3>
+            <h1>$ <span>00</span> </h1>
+        </div>
+        <div class="bg-violet-400 w-4/12 m-5 text-center text-3xl font-bold py-20 rounded-lg">
+            <h3>Withdraw</h3>
+            <h1>$ <span>00</span> </h1>
+        </div>
+        <div class="bg-pink-400 w-4/12 m-5 text-center text-3xl font-bold py-20 rounded-lg">
+            <h3>Balance</h3>
+            <h1>$ <span>00</span> </h1>
+        </div>
     </section>
+
+    <section class="flex gap-20 px-40 m-5">
+
+        <div id="" class="bg-fuchsia-600 p-10 mt-20 w-10/12 rounded-lg mt-auto">
+
+            <input id="withdraw" class="px-10 py-5 rounded w-8/12 mx-auto h-2/6" type="number"
+                placeholder="Enter your amount for Withdraw">
+            <br> <br>
+            <button id="savings-btn" class="hover:bg-sky-400 bg-white py-3 px-10 rounded-lg">Savings</button>
+
+        </div>
+
+
+        <div id="" class="bg-orange-500 p-10 mt-20 w-10/12 rounded-lg mt-auto">
+
+            <input id="withdraw" class="px-10 py-5 rounded w-8/12 mx-auto h-2/6" type="number"
+                placeholder="Enter your amount for Withdraw">
+            <br> <br>
+            <button id="withdraw-btn" class="hover:bg-sky-400 bg-white py-3 px-10 rounded-lg">Withdraw</button>
+
+        </div>
+
+    </section>
+
+
 
 
 
