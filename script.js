@@ -12,4 +12,4 @@ document.getElementById('sign-in').addEventListener('click', function () {
         alert("You are not a valid user")
     }
 
-})
+});
