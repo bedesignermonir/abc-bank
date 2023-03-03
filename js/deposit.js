@@ -1,13 +1,31 @@
 document.getElementById('savings-btn').addEventListener('click', function () {
-    const newSavings = document.getElementById('savings');
-    const newSavingsString = newSavings.value;
-    const newSaving = parseFloat(newSavingsString);
+    // get input field
+    const savingsInput = document.getElementById('savings');
 
-    const savingsValue = document.getElementById('total-savings');
-    const savingsTotalString = savingsValue.innerText;
-    const savingsTotal = parseFloat(savingsTotalString);
-    const savingsTotalDisplay = savingsValue.innerText = newSaving;
 
-    const totalSaving = newSaving + savingsTotal;
+    if (savingsInput.value = '' || 00) {
+        document.alert;
+    }
+
+
+
+    // get input field value
+    const savingsInputNum = parseFloat(savingsInput.value);
+    // get diposite display number
+    const dipositeDisplay = document.getElementById('total-savings');
+    // make diposite display number
+    const dipositeDisplayNum = parseFloat(dipositeDisplay.innerText);
+    // add new saving and previous display number
+    const calcualtion = dipositeDisplayNum + savingsInputNum;
+    // show the total number
+    dipositeDisplay.innerText = calcualtion;
+
+
+
+
+
+
+    // make the input blank after input
+    savingsInput.value = '';
 
 })
