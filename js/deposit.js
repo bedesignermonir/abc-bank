@@ -3,6 +3,16 @@ document.getElementById('savings-btn').addEventListener('click', function () {
     const savingsInput = document.getElementById('savings');
     // get input field value
     const savingsInputNum = parseFloat(savingsInput.value);
+
+    // make the input blank after input
+    savingsInput.value = '';
+
+    if (isNaN(savingsInputNum)) {
+        alert('please provide a valid number for diposit');
+        return;
+    }
+
+
     // get diposite display number
     const dipositeDisplay = document.getElementById('total-savings');
     // make diposite display number
@@ -23,7 +33,6 @@ document.getElementById('savings-btn').addEventListener('click', function () {
 
 
 
-    // make the input blank after input
-    savingsInput.value = '';
+
 
 })
