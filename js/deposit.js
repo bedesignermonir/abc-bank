@@ -1,14 +1,6 @@
 document.getElementById('savings-btn').addEventListener('click', function () {
     // get input field
     const savingsInput = document.getElementById('savings');
-
-
-    if (savingsInput.value = '' || 00) {
-        document.alert;
-    }
-
-
-
     // get input field value
     const savingsInputNum = parseFloat(savingsInput.value);
     // get diposite display number
@@ -20,8 +12,14 @@ document.getElementById('savings-btn').addEventListener('click', function () {
     // show the total number
     dipositeDisplay.innerText = calcualtion;
 
-
-
+    // get total balance
+    const totalBalance = document.getElementById('total-balance');
+    // make total Balance string to number
+    const totalBalanceNum = parseFloat(totalBalance.innerText);
+    // add deposit balance to total balance
+    const totalDeposit = totalBalanceNum + savingsInputNum;
+    // display the latest total deposit
+    totalBalance.innerText = totalDeposit;
 
 
 
